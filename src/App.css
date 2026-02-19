@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+html, body, #root {
+  height: 100%;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+.product-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card-body {
+  padding: 1rem;
+}
+.main-header {
+  height: 70px;           /* 👈 header height fix */
+}
+
+.product-detail-img {
+  width: 100%;
+  max-width: 100px;     /* 👈 image limit */
+  height: auto;
+  max-height: 200px;    /* 👈 height limit */
+  object-fit: contain;  /* 👈 image crop nahi hogi */
+  border-radius: 10px;
+}
