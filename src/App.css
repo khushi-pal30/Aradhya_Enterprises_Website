@@ -1,3 +1,7 @@
+/* ✅ Add this at the very top of App.css */
+*, *::before, *::after {
+  box-sizing: border-box; /* prevents overflow issues globally */
+}
 .App {
   text-align: center;
 }
@@ -64,9 +68,9 @@ html, body, #root {
 
 .product-detail-img {
   width: 100%;
-  max-width: 100px;     /* 👈 image limit */
+  max-width: 400px;     /* more reasonable size */
   height: auto;
-  max-height: 200px;    /* 👈 height limit */
-  object-fit: contain;  /* 👈 image crop nahi hogi */
+  max-height: 300px;
+  object-fit: contain;
   border-radius: 10px;
 }
